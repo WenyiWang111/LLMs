@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Mood Music Recommender</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tell the Chatbot About Your Mood</h1>
+        <textarea id="moodInput" placeholder="Describe your mood..."></textarea>
+        <button onclick="getSongRecommendations()">Get Song Recommendations</button>
+        <div id="loading" style="display: none;">Loading...</div>
+        <div id="error" style="color: red; display: none;"></div>
+        <ul id="songList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
